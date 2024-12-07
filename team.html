@@ -23,6 +23,11 @@
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
 
         <main>
@@ -97,6 +102,17 @@
             <a href="mailto:screwdrivers@gmail.net">screwdrivers@gmail.ca</a>
         </p>
     </footer>
+
+    <script>
+        // JavaScript for Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+        const body = document.querySelector('body');
+
+        hamburger.addEventListener('click', () => {
+            body.classList.toggle('mobile-nav-active');
+        });
+    </script>
 
 </body>
 
