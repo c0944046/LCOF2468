@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/screwdrivers/favicon.ico">
+
+    <title>Screwdriver FAQs</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html"><img src="img/screwdrivers/logo.png" alt="Screwdriver logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <main>
+            <h2>
+                Frequently Asked Questions <br><br>
+                Your Questions, Answered
+            </h2>
+        
+            <div class="faq">
+                <h2>1. What types of screwdrivers do you offer?</h2>
+                <p>We offer a variety of screwdrivers, including flathead, Phillips, Torx, hex, and precision screwdrivers, as well as screwdriver sets for all your needs.</p>
+            </div>
+            <div class="faq">
+                <h2>2. How do I choose the right screwdriver for my needs?</h2>
+                <p>Consider the type of screws you will be working with and the application. Our detailed product descriptions can help guide you to the right choice.</p>
+            </div>
+            <div class="faq">
+                <h2>3. Are your screwdrivers durable and rust-resistant?</h2>
+                <p>Yes, our screwdrivers are made from high-quality steel and feature rust-resistant coatings to ensure durability and longevity.</p>
+            </div>
+            <div class="faq">
+                <h2>4. Do you offer warranties on your screwdrivers?</h2>
+                <p>Yes, we offer a 3-year warranty on all our screwdriver products. Specific warranty details can be found on each product page.</p>
+            </div>
+            <div class="faq">
+                <h2>5. Do you provide custom screwdriver solutions?</h2>
+                <p>Yes, we can create custom screwdriver sets tailored to your specific requirements. Contact us with your needs to learn more.</p>
+            </div>
+            <div class="faq">
+                <h2>6. How should I maintain my screwdrivers?</h2>
+                <p>Clean your screwdrivers regularly, store them in a dry place, and avoid using them for tasks beyond their intended purpose to prolong their lifespan.</p>
+            </div>
+            <div class="faq">
+                <h2>7. Where can I purchase your screwdrivers?</h2>
+                <p>Our screwdrivers are available on our website, through authorized retailers, and at major hardware stores nationwide.</p>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Footer Content -->
+    <footer>
+        <p>
+            &copy; Copyright 2024. All Rights Reserved. <br>
+            Request Information: <br>
+            <a href="mailto:screwdrivers@gmail.net">screwdrivers@gmail.ca</a>
+        </p>
+    </footer>
+
+    <script>
+        // JavaScript for Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+        const body = document.querySelector('body');
+
+        hamburger.addEventListener('click', () => {
+            body.classList.toggle('mobile-nav-active');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/screwdrivers/favicon.ico">
+
+    <title>Screwdriver Media</title>
+</head>
+
+<body>
+
+    <div id="container">
+        
+        <nav>
+            <a href="index.html"><img src="img/screwdrivers/logo.png" alt="Screwdriver logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+
+        <main>
+            <h2>Media</h2>
+            <div>
+                <h4>A Short Video Describing The Uses Of Screwdrivers</h4>
+                <div class="video-container">
+                    <video controls>
+                        <source src="media/Screwdriver.mp4" type="video/mp4">
+                        <p>Your browser does not support the video element.</p>
+                    </video>
+                </div>
+            </div>
+            <br>
+
+            <!-- Optionally, enable the audio element if needed -->
+            <!-- 
+            <div>
+                <h4>Listen to the Screwdriver Safety Audio below</h4>
+                <audio controls>
+                    <source src="media/Safety_Training_Audio.mp3" type="audio/mp3">
+                    <p>Your browser does not support the audio element.</p>
+                </audio>
+            </div> 
+            -->
+        </main>
+
+    </div>
+
+    <!-- Footer Content -->
+    <footer>
+        <p>
+            &copy; Copyright 2024. All Rights Reserved. <br>
+            Request Information: <br>
+            <a href="mailto:screwdrivers@gmail.net">screwdrivers@gmail.ca</a>
+        </p>
+    </footer>
+
+    <script>
+        // JavaScript for Hamburger Menu Toggle (for mobile responsiveness)
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+        const body = document.querySelector('body');
+
+        hamburger.addEventListener('click', () => {
+            body.classList.toggle('mobile-nav-active');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    max-width: auto;
+    margin: auto;
+}
+
+h2 {
+    color: #007BFF;
+    margin-bottom: 2px;
+}
+
+/* Section and Aside Styling */
+section, aside {
+    margin-bottom: 1px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.aside {
+    color: #555;
+}
+
+
+
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    section, aside {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    aside {
+        flex: 1 1 calc(30% - 20px);
+    }
+}
+
+@media (min-width: 1024px) {
+    section {
+        flex: 1 1 calc(70% - 20px);
+    }
+
+    aside {
+        flex: 1 1 calc(25% - 20px);
+    }
+}

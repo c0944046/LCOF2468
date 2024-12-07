@@ -2,123 +2,151 @@
 <html lang="en">
 
 <head>
-    <title>Forward Fitness Club</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Francois+One|Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/screwdrivers/favicon.ico">
+
+    <title>Screwdriver home</title>
+    <style>
+
+        #product-categories .product img 
+        {
+             width: 100%; 
+             height: auto; 
+             max-width: 250px; 
+             display: block;
+        }
+ 
+        #hero {
+             width: 100%;
+             overflow: hidden; 
+         }
+ 
+         .full-width-image {
+             width: 100%;
+             height: auto; 
+             display: block; 
+         }
+ 
+         #product-categories {
+             text-align: center;
+             padding: 20px;
+         }
+ 
+         .products-container {
+             display: flex;
+             flex-wrap: wrap; /* Ensures items wrap to the next line if the screen is too narrow */
+             justify-content: center; /* Centers items horizontally */
+             gap: 20px; /* Adds space between items */
+         }
+ 
+         .product {
+             flex: 1 1 calc(33.33% - 20px); /* Adjusts the width to one-third minus the gap */
+             box-sizing: border-box; /* Includes padding and border in the width */
+             max-width: 300px; /* Sets a maximum width for consistency */
+             text-align: center;
+         }
+ 
+         .product img {
+             width: 100%;
+             height: auto; /* Maintains aspect ratio */
+             border-radius: 8px; /* Optional: adds rounded corners to images */
+             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for depth */
+         }
+ 
+         .product p {
+             margin-top: 10px;
+             font-size: 14px;
+         }
+     </style>
 </head>
 
 <body>
 
     <div id="container">
-        <!--Mobile Nav-->
-        <nav class="mobile-nav">
-            <div id="menu-link">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="classes.html">Classes</a>
-                <a href="nutrition.html">Nutrition</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-            <a class="menu-icon" onclick="hamburger()">
-                <div>&#9776;</div>
-            </a>
-        </nav>
-        <!-- Use the header area for the website name or logo -->
-        <header id="ffc-logo">
-            <a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
-        </header>
-
-        <!--Tablet, Desktop Nav-->
-        <nav class="tablet-desktop">
+        <nav>
+            <a href="index.html"><img src="img/screwdrivers/logo.png" alt="Screwdriver logo"></a>
             <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
 
         <!-- Hero Image -->
         <div id="hero" class="tablet-desktop">
-            <img src="images/hero-image.jpg" alt="left arm extended holding a weight">
+            <img src="img/screwdrivers/bannerimage.jpg" alt="Screwdriver Banner Image" class="full-width-image">
         </div>
 
-        <!-- Use the main area to add the main content of the webpage -->
         <main>
-
             <div class="mobile">
-
-                <p>Welcome to Forward Fitness Club. Our mission is to help our clients meet their fitness and nutrition
-                    goals.</p>
-
-                <h3>FREE One-Week Trial Membership!</h3>
-                <p>Call Us Today to Get Started</p>
-                <p class="tel-link"><a href="tel:8145559608">(814) 555-9608</a></p>
-
-                <h4>Fitness Club Hours:</h4>
-                <ul class="hours">
-                    <li>Mon - Thu: 6:00am - 6:00pm</li>
-                    <li>Friday: 6:00am - 4:00pm</li>
-                    <li>Saturday: 8:00am - 6:00pm</li>
-                    <li>Sunday: Closed</li>
-                </ul>
-
+                <h2>Welcome to Forbisher Screwdrivers</h2>
+                <p>Welcome to Forbisher Screwdrivers, your trusted partner for high-quality screwdrivers...</p>
             </div>
-
+    
             <div class="tablet-desktop">
-
-                <p>Welcome to Forward Fitness Club. Our mission is to help our clients meet their fitness and nutrition
-                    goals.</p>
-
-                <p>If you have struggled with getting healthy and need the motivation and resources to make a healthy
-                    lifestyle change, contact us today. Our facility includes state-of-the-art equipment, convenient
-                    group training classes, and nutrition tips and information to keep you healthy.</p>
-
-                <p>We provide a FREE, one-week membership to experience the benefits of our equipment and facility. This
-                    one-week trial gives you complete access to our equipment, training classes, and nutrition planning.
-                    Contact us today to <span class="action">start your free trial!</span></p>
-
+                <h3>Welcome To Forbisher Screwdrivers</h3>
+                <p>At Forbisher Screwdrivers, we believe in delivering tools that professionals can rely on...</p>
+                
+                <section id="product-categories">
+                    <h3>Our Bestsellers</h3>
+                    <div class="products-container">
+                        <div class="product">
+                            <img src="img/screwdrivers/precision-screwdriver.jpg" alt="Precision Screwdriver">
+                            <p><strong>Precision Screwdriver</strong><br>Perfect for intricate tasks and delicate electronics.</p>
+                        </div>
+                        <div class="product">
+                            <img src="img/screwdrivers/industrial-screwdriver.jpg" alt="Industrial Screwdriver">
+                            <p><strong>Industrial Screwdriver</strong><br>Built for heavy-duty and industrial applications.</p>
+                        </div>
+                        <div class="product">
+                            <img src="img/screwdrivers/ergonomic-screwdriver.jpeg" alt="Ergonomic Screwdriver">
+                            <p><strong>Ergonomic Screwdriver</strong><br>Designed for comfort during long hours of use.</p>
+                        </div>
+                        <div class="product">
+                            <img src="img/screwdrivers/magnetic-screwdriver.jpg" alt="Magnetic Screwdriver">
+                            <p><strong>Magnetic Screwdriver</strong><br>Features a magnetic tip for secure fastening.</p>
+                        </div>
+                        <div class="product">
+                            <img src="img/screwdrivers/electric-screwdriver.jpg" alt="Electric Screwdriver">
+                            <p><strong>Electric Screwdriver</strong><br>Efficient and effortless fastening with power assistance.</p>
+                        </div>
+                        <div class="product">
+                            <img src="img/screwdrivers/multi-bit-screwdriver.jpg" alt="Multi-bit Screwdriver">
+                            <p><strong>Multi-bit Screwdriver</strong><br>Comes with interchangeable bits for versatile use.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
-
-            <div class="grid">
-
-                <figure class="frame">
-                    <a href="classes.html"><img src="images/fitness-group.jpg" alt="group of fitness people"></a>
-                    <figcaption class="pic-text">Group Fitness</figcaption>
-                </figure>
-
-                <figure class="frame">
-                    <a href="nutrition.html"><img src="images/food-heart.jpg"
-                            alt="healthy food in the shape of a heart"></a>
-                    <figcaption class="pic-text">Meal Plans</figcaption>
-                </figure>
-
-                <figure class="frame">
-                    <a href="contact.html"><img src="images/personal-trainer.jpg"
-                            alt="personal trainer with a clipboard"></a>
-                    <figcaption class="pic-text">Start Today</figcaption>
-                </figure>
-
-            </div>
-
         </main>
-
-        <!-- Use the footer area to add webpage footer content -->
-        <footer>
-            <p>&copy; Copyright 2021. All Rights Reserved.</p>
-            <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
-        </footer>
-
     </div>
 
-    <script src="scripts/script.js"></script>
+    <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved. <br> Request Information: <br>
+            <a href="mailto:screwdrivers@gmail.net">screwdrivers@gmail.ca</a>
+        </p>
+    </footer>
+
+    <script>
+        // JavaScript for Hamburger Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+        const body = document.querySelector('body');
+
+        hamburger.addEventListener('click', () => {
+            body.classList.toggle('mobile-nav-active');
+        });
+    </script>
 
 </body>
 
